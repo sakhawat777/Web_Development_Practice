@@ -25,6 +25,24 @@ li:nth-child(2n+1){
 a:visited{
     color: blue;;
 }
+h1::before{
+    content: "❤️ ";
+    color: violet;
+}
+.special::after{
+    content: " Bye";
+    color: teal;
+}
+body {
+  counter-reset: section;                       /* Set a counter named 'section', and its initial value is 0. */
+}
+
+p::before {
+  counter-increment: section;                   /* Increment the value of section counter by 1 */
+  content: "Section " counter(section) ": ";    /* Display the word 'Section ', the value of
+                                                   section counter, and a colon before the content
+                                                   of each h3 */
+}
     </style>
 </head>
 <body>
@@ -32,11 +50,10 @@ a:visited{
     <h2>Bangladesh is a beautiful country.</h2>
     <button>OK</button>
     <p>Hello! How are yo doing?</p>
-<<<<<<< HEAD
     <h2>Pabna</h2>
 
     <h1>Pseudo Class</h1>
-    <h1>Normal Class</h1>
+    <h1 class="special">Normal Class</h1>
     <h1 class="special">Vodro Class</h1>
     <input name="email" type="text"> <br>
     <input name="password" type="text"> <br>
@@ -46,14 +63,16 @@ a:visited{
        <li>Apple</li>
        <li>Orange</li>
        <li>Mango</li>
-       <li>PineApple</li>
+       <li>PineApple</li> 
        <li>BackBurry</li>
 
    </ul>
+   <p>Apple</p>
+   <p>Orange</p>
+   <p>Mango</p>
+   <p>PineApple</p>
+   <p>BackBurry</p>
     
-=======
-    <h2>pabna</h2>
->>>>>>> 2a7352819b583859c5c6cf105ded9c6f504339ee
     
 </body>
 </html>
